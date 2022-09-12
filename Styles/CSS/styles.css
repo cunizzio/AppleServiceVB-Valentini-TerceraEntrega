@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.titulo__logo {
+  display: flex;
+  gap: 15px;
+  padding: 30px;
+  background-image: linear-gradient(grey, lightgrey);
+  border: 2px solid;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; }
+  .titulo__logo .container__header__img {
+    width: 35px; }
+    .titulo__logo .container__header__img .header__img {
+      width: 100%; }
+
+.navbar {
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  background-image: linear-gradient(grey, lightgrey); }
+
+.main, .main__paginas {
+  display: flex;
+  justify-content: center;
+  border-left: solid 2px;
+  border-right: solid 2px;
+  background-color: lightgrey;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  flex-wrap: wrap; }
+
+.main__paginas {
+  padding-top: 0px; }
+
+.card {
+  width: 40rem;
+  animation-name: efecto__img__principal;
+  animation-duration: 3s; }
+  .card .card-body {
+    background-color: grey; }
+    .card .card-body .card-text {
+      animation-name: parrafo__principal;
+      animation-duration: 3s; }
+
+@keyframes efecto__img__principal {
+  0% {
+    width: 20rem; }
+  100% {
+    width: 40rem; } }
+
+@keyframes parrafo__principal {
+  0% {
+    font-size: 50%; }
+  100% {
+    font-size: 100%; } }
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-image: linear-gradient(lightgrey, grey);
+  border: 2px solid; }
+  .footer .footer__img {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around; }
+    .footer .footer__img .imagenes__redes {
+      height: 100%; }
+
+.ContenedorTitulos {
+  height: 15vh; }
+  .ContenedorTitulos .Titulos {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+
+.VideoProductos {
+  align-items: center;
+  display: flex;
+  justify-content: space-around; }
+  .VideoProductos .Video__productos {
+    width: 20%;
+    border-radius: 20px; }
+
+.ListasDePrecios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  padding-top: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%; }
+  .ListasDePrecios .cards__listas {
+    border-radius: 20px;
+    background-color: grey;
+    overflow: hidden;
+    padding: 5px;
+    border: 2px solid; }
+    .ListasDePrecios .cards__listas:hover {
+      transform: scale(120%, 120%);
+      box-shadow: 5px 5px 25px black; }
+    .ListasDePrecios .cards__listas ul {
+      background-color: grey;
+      padding-left: 0px; }
+      .ListasDePrecios .cards__listas ul li {
+        list-style-type: none;
+        text-decoration: none; }
+    .ListasDePrecios .cards__listas .titulos__listas {
+      text-align: center;
+      background-color: grey;
+      margin-bottom: 0; }
+
+.descripcion__form {
+  width: 70%;
+  display: flex;
+  flex-direction: column; }
+
+.img__descripcion__form__liberacion {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .img__descripcion__form__liberacion .ContenedorImgLiberacion {
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .img__descripcion__form__liberacion .ContenedorImgLiberacion .ContenedorImgLiberacion__Img {
+      width: 100%; }
+
+.img__descripcion__form__servicio {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .img__descripcion__form__servicio .ContenedorImgServicio {
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .img__descripcion__form__servicio .ContenedorImgServicio .ContenedorImgServicio__Img {
+      width: 100%; }
+
+.descripcion__form {
+  width: 70%;
+  display: flex;
+  flex-direction: column; }
+
+@media screen and (max-width: 1050px) {
+  .ubicacion {
+    width: 400px;
+    height: 250px; } }
+
+@media screen and (max-width: 860px) {
+  .ubicacion {
+    width: 300px;
+    height: 200px; } }
+
+@media screen and (max-width: 700px) {
+  .footer .footer__img {
+    height: 8vh; }
+  .img__descripcion__form__liberacion {
+    flex-direction: column;
+    align-items: center; }
+  .img__descripcion__form__servicio {
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 400px) {
+  .footer .footer__img {
+    height: 5vh; }
+  .ubicacion {
+    width: 150px;
+    height: 100px; } }
+
+@media screen and (max-width: 200px) {
+  .footer .footer__img {
+    height: 3vh; } }

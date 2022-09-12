@@ -1,0 +1,22 @@
+{
+  "name": "Apple Service V.B.",
+  "version": "1.0.0",
+  "description": "Esta es la página de Apple Service V.B. un negocios dedicado a la venta, repación de celulares y productos afines",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "node-sass --include-path scss styles/scss/styles.scss styles/css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "iPhone",
+    "Apple",
+    "celular",
+    "servicio técnico"
+  ],
+  "author": "Alejo Valentini",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
